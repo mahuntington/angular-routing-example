@@ -16,21 +16,7 @@ import { RouterModule }   from '@angular/router';
     LinksComponent
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot([
-      {
-        path: 'about',
-        component: AboutComponent
-      },
-      {
-        path: 'resume',
-        component: ResumeComponent
-      },
-      {
-        path: 'links',
-        component: LinksComponent
-      }
-    ])
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
