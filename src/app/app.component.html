@@ -13,11 +13,12 @@
         <li>
             <a routerLink="/links">Link</a>
         </li>
-        <li>
-            <a routerLink="/user/1">User 1</a>
-        </li>
-        <li>
-            <a routerLink="/user/2">User 2</a>
+    </ul>
+</nav>
+<nav>
+    <ul>
+        <li *ngFor="let user of users; index as i">
+            <a routerLink="/user/{{i}}">{{user}}</a>
         </li>
     </ul>
 </nav>
