@@ -6,6 +6,23 @@ import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
 
+import { RouterModule }   from '@angular/router';
+
+RouterModule.forRoot([
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'resume',
+    component: ResumeComponent
+  },
+  {
+    path: 'links',
+    component: LinksComponent
+  }
+]);
+
 @NgModule({
   declarations: [
     AppComponent,
