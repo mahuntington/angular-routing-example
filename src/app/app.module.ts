@@ -7,13 +7,15 @@ import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
 
 import { AppRoutingModule }     from './app-routing.module';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ResumeComponent,
-    LinksComponent
+    LinksComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
