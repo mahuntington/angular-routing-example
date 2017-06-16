@@ -8,21 +8,6 @@ import { LinksComponent } from './links/links.component';
 
 import { RouterModule }   from '@angular/router';
 
-RouterModule.forRoot([
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'resume',
-    component: ResumeComponent
-  },
-  {
-    path: 'links',
-    component: LinksComponent
-  }
-]);
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +16,21 @@ RouterModule.forRoot([
     LinksComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'resume',
+        component: ResumeComponent
+      },
+      {
+        path: 'links',
+        component: LinksComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
