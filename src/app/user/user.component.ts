@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute }   from '@angular/router';
+import { USERS } from './users';
 
 @Component({
   selector: 'app-user',
@@ -7,7 +8,7 @@ import { ActivatedRoute }   from '@angular/router';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  userIndex: Number;
+  user: String;
 
   constructor(
       private route: ActivatedRoute
@@ -15,7 +16,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
       this.route.params.forEach(param => {
-          this.userIndex = param.index;
+          this.user = USERS[param.index];
       })
   }
 
