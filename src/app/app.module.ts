@@ -7,7 +7,10 @@ import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
 
 import { AppRoutingModule }     from './app-routing.module';
+import { AboutRoutingModule }     from './about/about-routing.module';
 import { UserComponent } from './user/user.component';
+import { EarlyLifeComponent }  from './about/early-life.component';
+import { CareerComponent }  from './about/career.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +18,14 @@ import { UserComponent } from './user/user.component';
     AboutComponent,
     ResumeComponent,
     LinksComponent,
+    EarlyLifeComponent,
+    CareerComponent,
     UserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

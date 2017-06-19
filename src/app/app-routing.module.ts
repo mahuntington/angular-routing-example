@@ -8,10 +8,6 @@ import { UserComponent }      from './user/user.component';
 
 const routes: Routes = [
     {
-      path: 'about',
-      component: AboutComponent
-    },
-    {
       path: 'resume',
       component: ResumeComponent
     },
